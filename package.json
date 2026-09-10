@@ -1,0 +1,33 @@
+{
+  "name": "m2o-mysql",
+  "version": "1.0.0",
+  "author": "M2O Server",
+  "description": "oxmysql-compatible MySQL layer for the M2O Node.js runtime (mysql2 pool, named placeholders, transactions). Every function exists and never throws.",
+  "type": "commonjs",
+  "mafiahub": {
+    "serverScripts": [
+      "server/main.js"
+    ],
+    "exports": [
+      "mysql",
+      "query",
+      "query_async",
+      "execute",
+      "single",
+      "scalar",
+      "insert",
+      "update",
+      "prepare",
+      "transaction",
+      "ready",
+      "isReady",
+      "ping",
+      "fetchAll",
+      "fetchScalar"
+    ],
+    "priority": 1
+  },
+  "dependencies": {
+    "mysql2": "^3.14.0"
+  }
+}
