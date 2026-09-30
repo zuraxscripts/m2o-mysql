@@ -2,10 +2,19 @@
 
 function fromEnv() {
   try {
-    if (typeof process !== "undefined" && process && process.env) {
-      return process.env.MYSQL_CONNECTION_STRING || process.env.mysql_connection_string || "";
+    if (
+      typeof process !== "undefined" &&
+      process &&
+      process.env
+    ) {
+      return (
+        process.env.MYSQL_CONNECTION_STRING ||
+        process.env.mysql_connection_string ||
+        ""
+      );
     }
   } catch (_) {}
+
   return "";
 }
 
